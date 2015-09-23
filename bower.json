@@ -1,0 +1,20 @@
+{
+  "name": "MedTimer",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ErikMHsiao/2015-08-solo",
+  "authors": [
+    "Erik Hsiao <ErikMHsiao@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.6"
+  }
+}

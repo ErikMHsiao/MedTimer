@@ -1,0 +1,17 @@
+<p>
+  Day:
+  <input type="checkbox" ng-model="schedule[0]">Sunday
+  <input type="checkbox" ng-model="schedule[1]">Monday
+  <input type="checkbox" ng-model="schedule[2]">Tuesday
+  <input type="checkbox" ng-model="schedule[3]">Wednesday
+  <input type="checkbox" ng-model="schedule[4]">Thursday
+  <input type="checkbox" ng-model="schedule[5]">Friday
+  <input type="checkbox" ng-model="schedule[6]">Saturday
+</p>
+<div class="input-group clockpicker">
+  <p>
+    Time:
+    <input type="text" class="form-control" ng-model="time" ng-model-options="{updateOn: 'blur'}">
+  </p>
+</div>
+<a ng-click="save()" ui-sref="today">Add</a>

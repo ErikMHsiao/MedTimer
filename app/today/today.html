@@ -1,0 +1,5 @@
+<h1>Today's Meds</h1>
+<div ng-repeat="med in records" ng-show="med.today">
+  <h3>{{med.next.display}} - {{med.name}} {{med.dosage}}</h3>
+</div>
+<a ui-sref="add.name">Add Med</a>

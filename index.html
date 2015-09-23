@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="medTimer">
+  <head>
+    <meta charset="utf-8" />
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <title>Med Timer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/clockpicker/dist/jquery-clockpicker.min.css"/>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <ul class="nav">
+          <li><a class="logo" ui-sref="today">Med Timer</a></li>
+          <li><a ui-sref="today">Today's Meds</a></li>
+          <li><a ui-sref="calendar">Calendar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div ui-view></div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/clockpicker/dist/jquery-clockpicker.min.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="bower_components/later/later.min.js"></script>
+    <script src="app/today/today.js"></script>
+    <script src="app/add/add.js"></script>
+    <script src="app/calendar/calendar.js"></script>
+    <script src="app/services/services.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
